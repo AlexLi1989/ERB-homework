@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+:root{
+  --white:#ead9c7;
+  --light-blue:#547792;
+  --dark-blue:#1A3263;
+  --orange:#FAB95B;
+  --main-padding:1rem;
+}
+body{
+  font-family: "Lato",Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  font-size: 16px;
+  padding: 0 var(--main-padding);
+  width: 768px;
+  background: var(--white);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 1.5rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: var(--white);
+}
+.home-button{
+  width: 30%;
+}
+.nav-links{
+  width: 60%;
+}
+.nav-links ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+header h1, .nav-links a{
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: var(--dark-blue);
+  font-weight: 800;
+}
+/* add border and text change effect to header when scrolling down */
+.scrolled {
+    border-bottom: 1px solid #a5a3a3;
+    box-shadow: 0 4px 6px -6px #222;
+}
+html {
+    scroll-behavior: smooth;
+}
+header h1:hover, .nav-links a:hover{
+  color: var(--orange);
+}
+.nav-links li{
+  margin: 0 0.2rem;
+}
+
+main{
+  padding-top: calc(var(--main-padding)*5);
+}
