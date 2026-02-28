@@ -20,7 +20,6 @@
     <title>London of UK</title>
   </head>
   <body>
-    <!-- todo add burger menu -->
     <header class="header" id="navbar">
       <div class="home-button">
         <a href="/index.html"> <i class="fa-solid fa-house"></i></a>
@@ -148,33 +147,130 @@
           <h2>Must-See London Sights</h2>
           <p>Things you won’t wanna miss</p>
         </div>
-        <div id="lightbox-slides">
-          <!-- todo inset lightbox -->
+        <div class="preview-card-container">
+          <figure class="figure preview-hover">
+            <img
+              src="/pictures/uk_London-Eye.jpeg"
+              onclick="
+                openLightbox();
+                showSlide(1);
+              "
+            />
+            <figcaption>london eye</figcaption>
+          </figure>
+          <figure class="figure preview-hover">
+            <img
+              src="/pictures/uk_London-Parliament.jpeg"
+              onclick="
+                openLightbox();
+                showSlide(2);
+              "
+            />
+            <figcaption>london parliament</figcaption>
+          </figure>
+          <figure class="figure preview-hover">
+            <img
+              src="/pictures/uk_London-Tower.jpg"
+              onclick="
+                openLightbox();
+                showSlide(3);
+              "
+            />
+            <figcaption>london tower</figcaption>
+          </figure>
+          <figure class="figure preview-hover">
+            <img
+              src="/pictures/uk_St.-Pauls-Cathedral.jpeg"
+              onclick="
+                openLightbox();
+                showSlide(4);
+              "
+            />
+            <figcaption>st.paul's cathedral</figcaption>
+          </figure>
+          <figure class="figure preview-hover">
+            <img
+              src="/pictures/uk_Tower-Bridge.jpeg"
+              onclick="
+                openLightbox();
+                showSlide(5);
+              "
+            />
+            <figcaption>tower bridge</figcaption>
+          </figure>
+          <figure class="figure preview-hover">
+            <img
+              src="/pictures/uk_Westminster-Abbey.jpeg"
+              onclick="
+                openLightbox();
+                showSlide(6);
+              "
+            />
+            <figcaption>westminster abbey</figcaption>
+          </figure>
+        </div>
+        <div id="lightbox">
+          <span class="close-btn" onclick="closeLightbox()">&times;</span>
+          <div class="lightbox-content">
+            <div class="slides">
+              <img
+                src="/pictures/uk_London-Eye.jpeg"
+                alt="London Eye"
+                class="slides-image"
+              />
+            </div>
+            <div class="slides">
+              <img
+                src="/pictures/uk_London-Parliament.jpeg"
+                alt="London Parliament"
+                class="slides-image"
+              />
+            </div>
+            <div class="slides">
+              <img
+                src="/pictures/uk_London-Tower.jpg"
+                alt="London Tower"
+                class="slides-image"
+              />
+            </div>
+            <div class="slides">
+              <img
+                src="/pictures/uk_St.-Pauls-Cathedral.jpeg"
+                alt="St.Paul's Cathedral"
+                class="slides-image"
+              />
+            </div>
+            <div class="slides">
+              <img
+                src="/pictures/uk_Tower-Bridge.jpeg"
+                alt="Tower Bridge"
+                class="slides-image"
+              />
+            </div>
+            <div class="slides">
+              <img
+                src="/pictures/uk_Westminster-Abbey.jpeg"
+                alt="Westminster Abbey"
+                class="slides-image"
+              />
+            </div>
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          </div>
         </div>
       </section>
-      <section>
-        <h2>Lorem ipsum dolor sit amet.</h2>
-        <div class="card">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
-            error suscipit animi explicabo laudantium repudiandae, facilis
-            voluptate possimus delectus omnis fuga eum eligendi tempore pariatur
-            iste! Optio officiis veritatis pariatur perspiciatis sequi earum nam
-            numquam tempora sed aliquam nihil provident ducimus possimus
-            necessitatibus repellendus temporibus est reiciendis voluptatum in,
-            dolorem voluptate consequuntur quisquam? Repudiandae est similique
-            repellendus facilis placeat necessitatibus porro iusto molestias ut
-            exercitationem doloribus explicabo quis blanditiis earum quo ea
-            sapiente ipsum optio dolorum eum, asperiores maiores neque nesciunt!
-            Expedita neque quo dicta perferendis cumque asperiores sit, dolorem
-            nulla natus fuga voluptatibus totam ipsa optio aliquid, numquam
-            facilis!
-          </p>
-        </div>
+      <!-- TODO add pop up section -->
+      <section class="pop-up">
+        <h2>
+          Let’s keep in touch! Leave your email for updates on our latest
+          projects.
+        </h2>
       </section>
     </main>
     <footer></footer>
     <script src="/javascripts_files/navBorder.js"></script>
     <script src="/javascripts_files/burgerMenu.js"></script>
+    <script src="/javascripts_files/lightBox.js"></script>
   </body>
 </html>
