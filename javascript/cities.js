@@ -37,21 +37,23 @@ document.addEventListener("DOMContentLoaded", () => {
   // footer date
   const date = (document.getElementById("date").innerHTML =
     new Date().getFullYear());
+  // lightbox
+  const slides = document.getElementsByClassName("slides");
+  const slidesCaption = document.querySelectorAll(".slides .slides-image");
+  const caption = document.getElementById("caption");
+  const previews = document.querySelectorAll(".figure.preview");
+  previews.forEach((preview, index) => {
+    preview.addEventListener("click", () => {
+      document.getElementById("lightbox").style.display = "block";
+      for (let slide of slides) {
+        slide.style.display = "none";
+      }
+      slides[index].style.display = "block";
+      caption.innerText = slidesCaption[index].alt;
+    });
+  });
+  const closeBtn = document.getElementById("close-btn");
+  closeBtn.addEventListener("click", () => {
+    document.getElementById("lightbox").style.display = "none";
+  });
 });
-// lightbox
-function openLightbox() {
-  document.getElementById("lightbox").style.display = "block";
-}
-function closeLightbox() {
-  document.getElementById("lightbox").style.display = "none";
-}
-function showSlide(n) {
-  let slides = document.getElementsByClassName("slides");
-  let slidesCaption = document.querySelectorAll(".slides .slides-image");
-  let caption = document.getElementById("caption");
-  for (let slide of slides) {
-    slide.style.display = "none";
-  }
-  slides[n - 1].style.display = "block";
-  caption.innerText = slidesCaption[n - 1].alt;
-}

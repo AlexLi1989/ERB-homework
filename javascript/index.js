@@ -104,3 +104,20 @@
       }));
 })();
 //# sourceMappingURL=imageMapResizer.map
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  // map img change on hover
+  const imageMap = document.getElementById("image-map");
+  const imageMapTargets = document.querySelectorAll(".map-target");
+  imageMapTargets.forEach((imageMapTarget) => {
+    imageMapTarget.addEventListener("mouseover", () => {
+      imageMap.src = `./assets/image_map_${imageMapTarget.alt}.png`;
+    });
+    imageMapTarget.addEventListener("mouseout", () => {
+      imageMap.src = `./assets/image_map.png`;
+    });
+  });
+  // footer date
+  const date = (document.getElementById("date").innerHTML =
+    new Date().getFullYear());
+});

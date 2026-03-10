@@ -9,81 +9,121 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css_files/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/index.css" />
     <title>Major Cities Overview</title>
   </head>
   <body>
     <main>
-      <h1>Welcome!</h1>
-      <h2>Click any country to start your journey!</h2>
-      <div class="interactive-map">
-        <img
-          src="./pictures/western_europe_map_original.png"
-          id="image-map"
-          style="width: 1024px; max-width: 100%; height: auto"
-          alt="western europe map with six countries"
-          usemap="#map"
-        />
-        <map name="map">
-          <area
-            href="./cities/germany.html"
-            alt="germany"
-            shape="poly"
-            coords="554, 478, 563, 493, 556, 500, 563, 506, 562, 516, 570, 518, 576, 530, 597, 530, 621, 536, 628, 544, 604, 568, 629, 586, 646, 574, 654, 566, 662, 576, 674, 569, 682, 576, 694, 586, 713, 585, 725, 596, 726, 606, 739, 614, 745, 606, 758, 603, 772, 608, 786, 598, 794, 606, 805, 609, 807, 591, 804, 576, 822, 576, 831, 563, 826, 544, 812, 540, 789, 523, 780, 493, 769, 478, 781, 468, 806, 461, 829, 448, 842, 439, 855, 446, 863, 430, 857, 412, 845, 399, 850, 370, 841, 362, 847, 352, 827, 339, 839, 320, 828, 291, 821, 276, 807, 263, 799, 266, 805, 247, 792, 242, 775, 249, 760, 254, 751, 264, 725, 277, 715, 270, 725, 256, 713, 250, 705, 254, 683, 247, 680, 230, 634, 223, 630, 238, 640, 242, 642, 248, 633, 254, 644, 280, 627, 285, 625, 299, 605, 287, 580, 294, 575, 308, 584, 310, 582, 317, 588, 329, 582, 340, 582, 351, 572, 355, 581, 369, 578, 383, 551, 390, 547, 397, 554, 410, 555, 419, 547, 420, 548, 444, 558, 465"
-            onmouseover="swapImage('./pictures/western_europe_map_GERMANY.png')"
-            onmouseout="swapImage('./pictures/western_europe_map_original.png')"
-          />
-          <area
-            href="./cities/switzerland.html"
-            shape="poly"
-            alt="switzerland"
-            coords="603, 573, 629, 592, 647, 578, 655, 570, 663, 580, 668, 580, 673, 575, 680, 583, 696, 590, 710, 589, 724, 603, 723, 610, 740, 616, 734, 622, 733, 637, 721, 646, 711, 647, 707, 676, 692, 666, 673, 660, 666, 659, 658, 674, 650, 666, 639, 649, 625, 651, 616, 661, 615, 674, 593, 672, 575, 676, 566, 674, 559, 654, 549, 649, 539, 664, 530, 663, 537, 644, 555, 626, 555, 605, 578, 589, 590, 594, 602, 594"
-            onmouseover="
-              swapImage('./pictures/western_europe_map_SWITZERLAND.png')
-            "
-            onmouseout="swapImage('./pictures/western_europe_map_original.png')"
-          />
-          <area
-            href="./cities/italy.html"
-            shape="poly"
-            alt="italy"
-            coords="596, 768, 603, 756, 573, 745, 577, 723, 568, 715, 581, 699, 575, 681, 593, 675, 619, 680, 623, 658, 637, 654, 649, 670, 660, 678, 667, 663, 694, 669, 709, 681, 715, 653, 729, 646, 740, 640, 740, 629, 764, 622, 784, 622, 781, 632, 794, 639, 809, 639, 838, 644, 833, 656, 829, 671, 846, 687, 843, 695, 826, 681, 802, 693, 785, 697, 782, 715, 795, 720, 783, 738, 789, 756, 830, 780, 849, 820, 875, 843, 920, 848, 928, 856, 915, 867, 985, 900, 1010, 918, 1005, 940, 994, 941, 982, 927, 961, 916, 946, 926, 946, 945, 965, 953, 965, 972, 949, 980, 937, 996, 915, 993, 923, 970, 909, 939, 888, 936, 869, 908, 861, 913, 848, 899, 819, 880, 803, 882, 743, 832, 723, 836, 722, 821, 690, 826, 705, 802, 683, 760, 640, 751, 625, 761, 604, 774"
-            onmouseover="swapImage('./pictures/western_europe_map_ITALY.png')"
-            onmouseout="swapImage('./pictures/western_europe_map_original.png')"
-          />
-          <area
-            href="./cities/spain.html"
-            shape="poly"
-            alt="spain"
-            coords="261, 738, 238, 736, 222, 738, 211, 733, 187, 734, 137, 728, 79, 720, 59, 727, 20, 747, 24, 766, 32, 810, 45, 798, 55, 796, 62, 808, 113, 802, 124, 813, 111, 832, 111, 866, 99, 885, 91, 882, 92, 898, 103, 912, 99, 933, 104, 935, 88, 963, 96, 975, 120, 976, 134, 983, 152, 1006, 175, 1008, 191, 992, 216, 986, 241, 983, 263, 984, 291, 987, 292, 972, 308, 962, 328, 960, 329, 939, 353, 921, 340, 911, 340, 894, 355, 872, 374, 860, 375, 848, 419, 842, 429, 824, 451, 815, 454, 796, 415, 802, 401, 786, 376, 778, 356, 785, 319, 770, 307, 772, 277, 755, 260, 750"
-            onmouseover="swapImage('./pictures/western_europe_map_SPAIN.png')"
-            onmouseout="swapImage('./pictures/western_europe_map_original.png')"
-          />
-          <area
-            href="./cities/france.html"
-            shape="poly"
-            alt="france"
-            coords="154, 567, 152, 576, 161, 580, 153, 587, 169, 604, 195, 604, 205, 610, 211, 625, 229, 615, 237, 628, 249, 648, 276, 671, 276, 701, 277, 722, 267, 738, 268, 750, 284, 753, 306, 767, 321, 767, 358, 780, 376, 771, 402, 784, 410, 788, 419, 798, 450, 792, 445, 782, 462, 773, 491, 781, 513, 781, 509, 791, 557, 800, 569, 788, 589, 775, 598, 758, 570, 748, 572, 724, 562, 714, 576, 701, 571, 681, 565, 684, 557, 660, 549, 654, 541, 667, 526, 668, 533, 642, 550, 626, 552, 603, 579, 584, 595, 592, 599, 585, 598, 568, 623, 543, 597, 533, 579, 534, 568, 525, 555, 514, 526, 517, 511, 504, 495, 492, 479, 495, 471, 478, 458, 467, 450, 475, 435, 473, 421, 463, 414, 442, 399, 444, 383, 462, 373, 490, 339, 505, 328, 514, 337, 522, 327, 529, 293, 523, 286, 512, 268, 505, 256, 514, 245, 520, 265, 525, 270, 556, 250, 556, 226, 558, 236, 548, 210, 545, 205, 552, 177, 554"
-            onmouseover="swapImage('./pictures/western_europe_map_FRANCE.png')"
-            onmouseout="swapImage('./pictures/western_europe_map_original.png')"
-          />
-          <area
-            href="./cities/united_kingdom.html"
-            shape="poly"
-            alt="united kingdom"
-            coords="311, 45, 291, 49, 279, 70, 237, 74, 201, 70, 178, 91, 160, 120, 153, 147, 172, 144, 189, 108, 222, 90, 194, 116, 183, 144, 174, 162, 165, 175, 185, 183, 176, 204, 187, 221, 130, 226, 99, 254, 101, 270, 147, 286, 175, 288, 201, 255, 179, 232, 217, 237, 213, 262, 223, 274, 250, 270, 243, 288, 265, 306, 240, 325, 217, 334, 207, 359, 213, 374, 179, 394, 171, 411, 207, 420, 234, 434, 205, 436, 192, 450, 145, 482, 165, 493, 201, 478, 213, 484, 243, 467, 253, 478, 287, 469, 296, 480, 324, 469, 351, 467, 377, 454, 385, 440, 374, 430, 390, 415, 410, 394, 398, 366, 382, 354, 367, 364, 368, 321, 359, 299, 331, 278, 321, 232, 306, 212, 283, 208, 300, 186, 321, 157, 329, 129, 297, 123, 265, 124, 276, 107, 299, 83, 312, 60"
-            onmouseover="swapImage('./pictures/western_europe_map_UK.png')"
-            onmouseout="swapImage('./pictures/western_europe_map_original.png')"
-          />
-        </map>
-        <!-- to make country name pop up when hover -->
-        <script src="./javascripts_files/mapChangeOnHover.js"></script>
-        <!-- to make image map area responsive when resizing -->
-        <script src="./javascripts_files/imageMapResizer.min.js"></script>
-        <script>
-          imageMapResize();
-        </script>
-      </div>
+      <section class="hero-section">
+        <h1>Explore the Wonders of Europe</h1>
+        <p>
+          Discover iconic landmarks, rich history, and vibrant cultures across
+          six magnificent European cities.
+        </p>
+        <div class="map-container">
+          <div class="interactive-map">
+            <img
+              src="./assets/image_map.png"
+              usemap="#image-map"
+              alt="western europe map"
+              id="image-map"
+            />
+            <map name="image-map">
+              <area
+                class="map-target"
+                alt="uk"
+                href="./cities/united_kingdom.html"
+                coords="215,82,193,108,244,105,237,124,218,144,240,150,265,181,280,184,302,221,330,227,329,238,314,248,324,260,305,274,274,272,233,280,220,276,205,284,182,282,166,292,154,286,187,261,208,258,172,252,165,244,191,235,176,222,181,206,218,210,219,196,203,178,175,174,169,168,143,194,110,191,113,181,108,167,126,166,149,176,158,161,156,138,142,128,153,102,169,82"
+                shape="poly"
+              />
+              <area
+                class="map-target"
+                alt="spain"
+                href="./cities/spain.html"
+                coords="67,458,98,443,130,449,159,445,184,452,204,451,241,451,254,462,298,473,313,471,337,477,359,477,361,487,343,502,314,507,307,519,295,527,285,547,294,562,281,573,277,586,257,593,241,611,186,612,169,619,164,627,151,629,141,619,134,605,111,601,111,595,123,580,116,572,121,561,111,545,120,543,123,532,127,522,127,511,129,505,137,502,131,490,119,486,101,488,92,480,76,483,78,471,74,466"
+                shape="poly"
+              />
+              <area
+                class="map-target"
+                alt="germany"
+                href="./cities/germany.html"
+                coords="447,302,490,310,497,316,489,322,480,332,478,342,490,341,502,338,524,344,534,349,544,353,556,348,568,348,582,345,607,349,601,337,612,329,620,318,600,308,590,296,586,286,605,278,630,266,654,262,646,240,634,216,640,210,621,195,596,184,558,194,555,186,533,180,532,171,517,176,500,171,506,194,488,205,463,201,465,219,453,243,439,247,441,287"
+                shape="poly"
+              />
+              <area
+                class="map-target"
+                alt="france"
+                href="./cities/france.html"
+                coords="179,323,210,318,246,323,245,298,266,306,315,294,325,287,332,269,352,264,359,271,369,274,391,291,408,292,431,304,442,307,459,313,481,318,471,336,469,347,449,349,445,359,434,373,435,381,447,383,453,394,458,402,452,411,453,423,459,432,465,436,470,444,449,455,405,450,368,457,364,468,337,471,311,462,296,464,271,458,254,452,244,445,258,420,263,400,262,389,240,368,220,352,183,338"
+                shape="poly"
+              />
+              <area
+                class="map-target"
+                alt="switzerland"
+                href="./cities/switzerland.html"
+                coords="456,353,450,364,440,372,441,378,449,376,461,386,473,390,485,383,495,378,504,381,509,376,516,374,528,377,539,373,526,367,519,362,519,354,501,348,487,354,477,350"
+                shape="poly"
+              />
+              <area
+                class="map-target"
+                alt="italy"
+                href="./cities/italy.html"
+                coords="459,392,463,402,460,411,462,426,472,429,476,436,481,438,490,432,503,424,538,438,545,461,579,488,604,502,620,504,630,510,647,519,657,528,664,531,680,556,671,582,680,580,693,562,704,556,705,549,690,542,698,523,721,526,734,535,736,529,716,511,675,498,680,492,675,486,659,488,632,466,621,449,597,434,590,424,591,415,590,405,607,393,627,395,623,388,625,377,591,368,585,363,564,366,558,373,549,370,540,381,521,384,515,380,513,390,494,390,475,398"
+                shape="poly"
+              />
+            </map>
+          </div>
+          <p>Click on a country on the map to start your adventure!</p>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Cities</h3>
+          <ul>
+            <li><a href="./cities/germany.html">Berlin</a></li>
+            <li><a href="./cities/switzerland.html">Bern</a></li>
+            <li><a href="./cities/united_kingdom.html">London</a></li>
+            <li><a href="./cities/spain.html">Madrid</a></li>
+            <li><a href="./cities/france.html">Paris</a></li>
+            <li><a href="./cities/italy.html">Rome</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="date"></span> Major Cities Overview. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="./javascript/index.js"></script>
+    <script>
+      imageMapResize();
+    </script>
   </body>
 </html>

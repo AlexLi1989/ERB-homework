@@ -267,10 +267,15 @@ img{
 }
 /* what section */
 #what{
+  .paragraph-container{min-height: 20rem;}
   .figure{
     flex: 0 0;
     height: 16.2rem;
-    img{width: 25rem;}}
+    img{
+      width: 25rem;
+      height: 18rem;
+      object-fit: cover;
+    }}
 }
 @media screen and (min-width:768px) {
   .title{
@@ -293,10 +298,10 @@ img{
 }
 /* where section */
 #where{
-  background-image: url(/assets/uk_london_location.png);
+  background-image: url(/assets/germany_berlin_location.png);
   background-repeat: no-repeat;
   background-size: 60%;
-  background-position: right bottom;
+  background-position: right;
   iframe{
     width: 50%;
     border-radius: 8px;
@@ -306,7 +311,7 @@ img{
 }
 @media screen and (min-width:768px) {
   #where{
-    background-size: 50%;
+    background-size: 70%;
     iframe{
       width: 60%;
       height: 20rem;
@@ -392,10 +397,10 @@ img{
       font-weight: 500;
     }
 }
-.preview-card-container .preview-hover{
+.preview-card-container .preview{
   transition: 0.3s;
 }
-.preview-card-container .preview-hover:hover {
+.preview-card-container .preview:hover {
   transform: translateY(-4px);
   box-shadow: var(--box-shadow-hover);
   cursor: pointer;
@@ -424,7 +429,7 @@ img{
   max-width: 1200px;
 }
 /* lightbox button */
-.close-btn {
+#close-btn {
   color: white;
   position: absolute;
   top: 1rem;
@@ -433,13 +438,13 @@ img{
   font-weight: 300;
   transition: 0.2s;
 }
-.close-btn:hover{
+#close-btn:hover{
   color: var(--accent-gold);
   cursor: pointer;
   transform: scale(1.1);
 }
 @media (min-width:992px) {
-  .close-btn {
+  #close-btn {
   font-size: 3.5rem;
 }
 }
@@ -541,6 +546,7 @@ footer {
   justify-content: space-around;
   flex-wrap: wrap;
   max-width: 1200px;
+  padding: 0 5rem;
   margin: 0 auto;
 }
 .footer-section {
