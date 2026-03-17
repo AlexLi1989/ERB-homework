@@ -106,15 +106,18 @@
 //# sourceMappingURL=imageMapResizer.map
 
 document.addEventListener("DOMContentLoaded", (event) => {
-  // map img change on hover
+  // map amd hero img change on hover
   const imageMap = document.getElementById("image-map");
   const imageMapTargets = document.querySelectorAll(".map-target");
+  const hero = document.getElementById("hero");
   imageMapTargets.forEach((imageMapTarget) => {
     imageMapTarget.addEventListener("mouseover", () => {
       imageMap.src = `./assets/image_map_${imageMapTarget.alt}.png`;
+      hero.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./assets/index_${imageMapTarget.alt}_hero.png)`;
     });
     imageMapTarget.addEventListener("mouseout", () => {
       imageMap.src = `./assets/image_map.png`;
+      hero.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./assets/index_hero.png)`;
     });
   });
   // footer date
