@@ -491,7 +491,7 @@ img{
 .preview-card-container .preview:hover {
   transform: translateY(-4px);
   box-shadow: var(--box-shadow-hover);
-  cursor: pointer;
+  cursor: zoom-in;
 }
 /* lightbox */
 #lightbox {

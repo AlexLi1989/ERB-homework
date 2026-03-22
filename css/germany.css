@@ -388,8 +388,8 @@ img{
 #where{
   background-image: url(/assets/germany_berlin_location.png);
   background-repeat: no-repeat;
-  background-size: 60%;
-  background-position: right bottom;
+  background-size: 50% 100%;
+  background-position: right;
   iframe{
     width: 50%;
     border-radius: 8px;
@@ -491,7 +491,7 @@ img{
 .preview-card-container .preview:hover {
   transform: translateY(-4px);
   box-shadow: var(--box-shadow-hover);
-  cursor: pointer;
+  cursor: zoom-in;
 }
 /* lightbox */
 #lightbox {
