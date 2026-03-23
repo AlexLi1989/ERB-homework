@@ -1,9 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
   // burger menu
   const toggleButton = document.querySelector("#navbar .mobile-menu-toggle");
+  const navLinks = document.querySelectorAll(".mobile-nav-links a");
   const mobileMenu = document.querySelector("#navbar .mobile-nav-links");
   toggleButton.addEventListener("click", () => {
     mobileMenu.classList.toggle("active");
+  });
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.toggle("active");
+    });
   });
   // nav bar border on scroll
   window.addEventListener("scroll", () => {

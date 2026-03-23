@@ -126,10 +126,11 @@ ul{
     background: var(--white);
     z-index: 1;
     width: 10rem;
-    border: 1px solid var(--light-gray);
     box-shadow: var(--box-shadow);
-    transition: transform 0.3s ease;
-    transform: translateX(100%);
+    z-index: 9999;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
     li{
       display: flex;
       align-items: center;
@@ -145,10 +146,10 @@ ul{
   }
 }
 #navbar .mobile-nav-links.active {
-  transform: translateX(0);
+  max-height: 500px;
 }
 /* ==== end of burger-menu =====*/
-/* change home button and hide mobile-menu dynamically*/
+/* change home button and hide mobile-menu*/
 @media screen and (min-width:768px) {
   .home-button{
     a+a{display: block;}
@@ -180,7 +181,6 @@ section{
   position: relative;
   margin-bottom: 2rem;
   padding-bottom: 2rem;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
@@ -279,6 +279,7 @@ img{
   text-align: center;
   margin-bottom: 2rem;
   background-attachment: fixed;
+  padding: none;
 }
 
 .hero-content {
@@ -355,6 +356,7 @@ img{
 
 /* what section */
 #what{
+  padding: 2rem;
   .paragraph-container{min-height: 20rem;}
   .figure{
     flex: 0 0;
@@ -386,6 +388,7 @@ img{
 }
 /* where section */
 #where{
+  padding: 2rem;
   background-image: url(/assets/uk_london_location.png);
   background-repeat: no-repeat;
   background-size: 60%;
@@ -407,6 +410,9 @@ img{
   }
 }
 /* weather section */
+#weather{
+  padding: 2rem;
+}
 #weather .paragraph-container{
   display: flex;
   flex-direction: column;
@@ -568,6 +574,9 @@ img{
 }
 }
 /* pop-up section*/
+#unique{
+  padding: 2rem;
+}
 #pop-up{
   position: relative;
   width: 100%;
