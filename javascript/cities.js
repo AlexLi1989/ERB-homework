@@ -20,6 +20,38 @@ document.addEventListener("DOMContentLoaded", () => {
       navbar.classList.remove("scrolled");
     }
   });
+  // carousel
+  var carousel = document.querySelector(".carousel-container");
+  var cards = carousel.querySelectorAll(".carousel-card");
+  var cardCount = 9;
+  var selectedIndex = 0;
+
+  function rotateCarousel() {
+    var angle = (selectedIndex / cardCount) * -360;
+    carousel.style.transform = "translateZ(-879px) rotateY(" + angle + "deg)";
+    updateSelectedCell();
+  }
+
+  function updateSelectedCell() {
+    cards.forEach((card) => card.classList.remove("is-selected"));
+    // to fix index can be negative problem
+    var absIndex = ((selectedIndex % cardCount) + cardCount) % cardCount;
+    cards[absIndex].classList.add("is-selected");
+  }
+
+  var prevButton = document.querySelector(".previous-button");
+  prevButton.addEventListener("click", function () {
+    selectedIndex--;
+    rotateCarousel();
+  });
+
+  var nextButton = document.querySelector(".next-button");
+  nextButton.addEventListener("click", function () {
+    selectedIndex++;
+    rotateCarousel();
+  });
+
+  updateSelectedCell();
   // pop up effect when scrolled to
   const popupCard = document.getElementById("pop-up-card");
   const options = {
